@@ -1,0 +1,36 @@
+@import "styles/input";
+@import "styles/button";
+@import "styles/registration";
+@import "styles/fonts";
+@import "styles/reporting";
+@import "styles/table";
+@import "styles/header";
+@import "styles/dashboard";
+@import "styles/modal";
+@import "styles/about-product";
+@import "styles/about";
+@import "styles/success-box";
+
+:root {
+  --font: 'Poppins', sans-serif;
+  --white: #fff;
+  --btnBg: rgb(112,71,235,01);
+  --purple-600: #5423e7;
+  --border-color: #d1d1db;
+  --green-100: #dff8ea;
+  --yellow-500: #ffc233;
+  --yellow-400: #FFD266;
+  --heightWithHeader: calc(100% - 72px);
+}
+
+.container {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.form {
+  .label {
+    display: block;
+    margin-bottom: 16px;
+  }
+}

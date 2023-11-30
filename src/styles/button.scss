@@ -1,0 +1,17 @@
+.button {
+  display: inline-block;
+  width: 100%;
+  font-weight: 500;
+  line-height: 28px;
+  color: var(--white);
+  border-radius: 8px;
+  background-color: var(--btnBg);
+  padding: 10px 16px;
+  border: 0;
+  cursor: pointer;
+  transition: opacity 0.3s;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}

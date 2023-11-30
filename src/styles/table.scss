@@ -1,0 +1,79 @@
+.table {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+  border-spacing: 0;
+
+  table,
+  th,
+  td {
+    border: 1px solid var(--border-color);
+  }
+
+  th {
+    border-left-width: 0;
+  }
+
+  td {
+    border-top-width: 0;
+    border-left-width: 0;
+  }
+
+  &__cell {
+    padding: 10px 15px;
+
+    &:first-child {
+      border-left-width: 1px;
+    }
+  }
+
+  &__actions {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  &__action {
+    position: relative;
+    width: 32px;
+    height: 32px;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--border-color);
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+    transition: transform 0.3s;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+
+    &--edit,
+    &--remove {
+      &:before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 20px;
+        height: 20px;
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+    }
+
+    &--edit {
+      &:before {
+        background-image: url("../../public/images/edit.svg");
+      }
+    }
+
+    &--remove {
+      &:before {
+        background-image: url("../../public/images/delete.svg");
+      }
+    }
+  }
+}

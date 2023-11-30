@@ -1,0 +1,30 @@
+.about {
+  height: var(--heightWithHeader);
+  padding-top: 100px;
+  background-color: var(--purple-600);
+  color: var(--white);
+
+  &__title {
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 16px;
+  }
+
+  &__sub-title {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 12px;
+  }
+
+  &__text {
+    width: 100%;
+    max-width: 50%;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 16px;
+  }
+
+  &__list {
+    padding-left: 20px;
+  }
+}

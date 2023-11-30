@@ -1,0 +1,44 @@
+.registration {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+
+  &__content {
+    width: 100%;
+    max-width: 560px;
+    margin: 0 auto;
+  }
+
+  &__wrapp {
+    width: 50%;
+    height: 100%;
+    background-color: rgba(84,35,231,0.7);
+  }
+
+  &__title {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 32px;
+    margin-bottom: 30px;
+  }
+
+  .label {
+    display: block;
+    margin-bottom: 16px;
+  }
+}
+
+.log-out {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--white);
+  background-color: unset;
+  border: none;
+  cursor: pointer;
+  transition: color 0.3s;
+
+  &:hover {
+    color: var(--border-color);
+  }
+}
