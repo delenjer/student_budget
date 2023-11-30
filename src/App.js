@@ -12,10 +12,10 @@ function App() {
     <div className="App">
       <Routes>
         <Route path={PageRouters.Login} element={<Registration />} />
-        <Route index path="home" element={<Home />} />
-        <Route path="reporting" element={<Reporting />} />
-        <Route path="dashboard" element={<Dashboard />} />
-        <Route path="about" element={<About />} />
+        <Route index path={PageRouters.Home} element={<Home />} />
+        <Route path={PageRouters.Reporting} element={<Reporting />} />
+        <Route path={PageRouters.Dashboard} element={<Dashboard />} />
+        <Route path={PageRouters.About} element={<About />} />
       </Routes>
     </div>
   );
